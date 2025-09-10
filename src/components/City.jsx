@@ -19,7 +19,7 @@ function City() {
 
   useEffect(() => {
     getCity(Number(id));
-  }, [id]);
+  }, [id, getCity]);
 
   // Jab tak city load ho rahi hai ya null hai
   if (isLoading || !currentCity) return <Spinner />;
